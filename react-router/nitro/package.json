@@ -5,11 +5,10 @@
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",
-    "start": "react-router-serve build/server/index.js",
+    "preview": "node .output/server/index.mjs",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
-    "@react-router/serve": "7.12.0",
     "@remix-run/node-fetch-server": "0.9.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
@@ -23,6 +22,7 @@
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-rsc": "~0.5.7",
+    "nitro": "npm:nitro-nightly@latest",
     "tailwindcss": "4.1.13",
     "typescript": "5.9.2",
     "vite": "7.1.6",

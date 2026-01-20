@@ -49,7 +49,7 @@ npm run build
 Run the production server:
 
 ```bash
-npm start
+node .output/server/index.mjs
 ```
 
 ## Understanding React Server Components
@@ -62,4 +62,4 @@ This template comes with [Tailwind CSS](https://tailwindcss.com/) already config
 
 ---
 
-Built with ❤️ using React Router. 
+Built with ❤️ using React Router.
