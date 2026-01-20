@@ -6,11 +6,14 @@ This example shows how to set up a React application with [Server Component](htt
 
 ```sh
 # run dev server
-npm run dev
+pnpm dev
 
 # build for production and preview
-npm run build
-npm run preview
+pnpm build
+pnpm preview
+
+# deploy to Cloudflare
+pnpm wrangler deploy
 ```
 
 ## API usage
