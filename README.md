@@ -1,10 +1,12 @@
 # Vite RSC Runtime Integration Examples
 
-This repository demonstrates how to integrate [`@vitejs/plugin-rsc`](https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-rsc) with different runtimes, including [React Router framework mode](https://reactrouter.com/how-to/react-server-components) examples.
+This repository demonstrates how to integrate [`@vitejs/plugin-rsc`](https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-rsc) with different runtimes.
 
 ## Background
 
 `@vitejs/plugin-rsc` defines the [`__VITE_ENVIRONMENT_RUNNER_IMPORT__`](https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-rsc#__vite_environment_runner_import__) convention to enable cross-environment module loading required by RSC. See [PR #1037](https://github.com/vitejs/vite-plugin-react/pull/1037) for details.
+
+This plugin-level convention is what allows higher-level frameworks like [React Router](https://reactrouter.com/how-to/react-server-components) to work transparently across different runtimes.
 
 ## Supported Runtimes / Plugins
 
