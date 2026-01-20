@@ -5,6 +5,16 @@ import { renderToReadableStream } from 'react-dom/server.edge'
 import { injectRSCPayload } from 'rsc-html-stream/server'
 import type { RscPayload } from './entry.rsc'
 
+// Nitro uses SSR entry as the main entry point, which delegates to RSC
+export default {
+  fetch: async (request: Request) => {
+    const rscEntryModule = await import.meta.viteRsc.loadModule<
+      typeof import('./entry.rsc')
+    >('rsc', 'index')
+    return rscEntryModule.default(request)
+  },
+}
+
 export async function renderHTML(
   rscStream: ReadableStream<Uint8Array>,
   options: {
