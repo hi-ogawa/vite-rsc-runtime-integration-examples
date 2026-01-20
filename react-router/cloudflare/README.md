@@ -46,10 +46,16 @@ npm run build
 
 ## Running Production Build
 
-Run the production server:
+Preview the production build with `wrangler`:
 
 ```bash
-npm start
+pnpm preview
+```
+
+Deploy to Cloudflare:
+
+```bash
+pnpm wrangler deploy
 ```
 
 ## Understanding React Server Components
@@ -62,4 +68,4 @@ This template comes with [Tailwind CSS](https://tailwindcss.com/) already config
 
 ---
 
-Built with ❤️ using React Router. 
+Built with ❤️ using React Router.

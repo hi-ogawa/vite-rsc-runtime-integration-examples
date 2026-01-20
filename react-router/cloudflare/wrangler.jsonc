@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "vite-rsc-react-router-framework-mode",
+  "main": "./app/entry.rsc.ts",
+  "workers_dev": true,
+  "compatibility_date": "2025-10-01",
+  "compatibility_flags": ["nodejs_als"],
+}
