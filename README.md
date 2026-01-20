@@ -1,16 +1,16 @@
-# Vite RSC and Environment Plugin Examples
+# Vite RSC Runtime Integration Examples
 
-This repository demonstrates how to use [`@vitejs/plugin-rsc`](https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-rsc) with different environment plugins that implement the `__VITE_ENVIRONMENT_RUNNER_IMPORT__` convention, including [React Router framework mode](https://reactrouter.com/how-to/react-server-components) examples.
+This repository demonstrates how to integrate [`@vitejs/plugin-rsc`](https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-rsc) with different runtimes, including [React Router framework mode](https://reactrouter.com/how-to/react-server-components) examples.
 
 ## Background
 
-`@vitejs/plugin-rsc` defines the [`__VITE_ENVIRONMENT_RUNNER_IMPORT__`](https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-rsc#__vite_environment_runner_import__) convention for runtime providers to enable cross-environment module loading required by RSC. See [PR #1037](https://github.com/vitejs/vite-plugin-react/pull/1037) for details.
+`@vitejs/plugin-rsc` defines the [`__VITE_ENVIRONMENT_RUNNER_IMPORT__`](https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-rsc#__vite_environment_runner_import__) convention to enable cross-environment module loading required by RSC. See [PR #1037](https://github.com/vitejs/vite-plugin-react/pull/1037) for details.
 
-## Runtime Provider Support
+## Supported Runtimes / Plugins
 
 ### Nitro
 
-Nitro implements `__VITE_ENVIRONMENT_RUNNER_IMPORT__` in its dev worker, enabling RSC module loading across environments.
+Nitro Vite plugin implements `__VITE_ENVIRONMENT_RUNNER_IMPORT__` in its dev worker, enabling RSC module loading across environments.
 
 - [PR #3919: Experimental RSC plugin support](https://github.com/nitrojs/nitro/pull/3919)
 
