@@ -1,6 +1,6 @@
 # Vite RSC and Environment Plugin Examples
 
-This repository demonstrates how to use [`@vitejs/plugin-rsc`](https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-rsc) with different runtime providers that implement the `__VITE_ENVIRONMENT_RUNNER_IMPORT__` convention.
+This repository demonstrates how to use [`@vitejs/plugin-rsc`](https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-rsc) with different runtime providers that implement the `__VITE_ENVIRONMENT_RUNNER_IMPORT__` convention, including [React Router framework mode](https://reactrouter.com/how-to/react-server-components) examples.
 
 ## Background
 
